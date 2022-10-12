@@ -36,9 +36,16 @@ for key, value in quiz.items():
 
     if answer.lower() == value['answer'].lower():
         print('Correct')
-        score = score + 2
+        score = score + 1
         print("Your score is: " + str(score))
+        print("")
+        print("")
     else:
         print("Wrong!")
         print("The answer is: " + value['answer'])
         print("Your score is: " + str(score))
+        print("")
+        print("")
+
+print(("You got ") + str(score) + " out of 5 questions correctly")
+print("Your final score is: " + str(int(score/5 * 100) + "%" ))
